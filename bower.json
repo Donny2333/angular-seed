@@ -1,0 +1,12 @@
+{
+  "name": "seed",
+  "description": "Angular seed project",
+  "authors": [
+    "Donny"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "ui-router#^0.4.2"
+  }
+}
