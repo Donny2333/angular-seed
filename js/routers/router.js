@@ -5,7 +5,7 @@
     'use strict';
 
     angular.module('seed.routers', ['ui.router'])
-        .config(function ($urlRouterProvider, $stateProvider) {
+        .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
             $urlRouterProvider.otherwise('/app/home');
 
             $stateProvider
@@ -30,6 +30,6 @@
                     templateUrl: './tpls/settings.html',
                     controller: 'SettingsController'
                 });
-        });
+        }]);
 
 }());
