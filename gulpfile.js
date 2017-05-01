@@ -10,7 +10,7 @@ gulp.task('js', function () {
     return gulp.src(['./js/*/*.js', './js/*.js'])
         .pipe(concat('bundle.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('./lib/'));
+        .pipe(gulp.dest('./build/'));
 });
 
 // 静态服务器
@@ -21,9 +21,9 @@ gulp.task('serve', ['js'], function () {
             }
         });
 
-        gulp.watch("tpls/*.html").on("change", ['reload']);
-        gulp.watch("css/*.css").on("change", ['reload']);
-        gulp.watch("js/**/*.js").on("change", ['js', 'reload']);
+        gulp.watch("tpls/*.html", ['reload']);
+        gulp.watch("css/*.css", ['reload']);
+        gulp.watch("js/**/*.js", ['js', 'reload']);
     }
 );
 
