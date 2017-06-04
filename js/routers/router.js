@@ -12,7 +12,7 @@
                 .state('app', {
                     abstract: true,
                     url: '/app',
-                    templateUrl: './tpls/menu.html',
+                    templateUrl: './tpls/app.html',
                     controller: 'AppController'
                 })
                 .state('app.home', {
@@ -32,4 +32,4 @@
                 });
         }]);
 
-}());
+})();

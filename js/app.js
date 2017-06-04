@@ -11,4 +11,4 @@
         'seed.controllers'
     ]);
 
-}());
+})();

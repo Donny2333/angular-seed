@@ -8,4 +8,4 @@
         .controller('MessageController', function () {
 
         })
-}());
+})();

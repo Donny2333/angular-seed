@@ -8,4 +8,4 @@
         .controller('SettingsController', function () {
 
         })
-}());
+})();

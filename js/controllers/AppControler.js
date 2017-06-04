@@ -8,4 +8,4 @@
         .controller('AppController', function () {
 
         })
-}());
+})();
